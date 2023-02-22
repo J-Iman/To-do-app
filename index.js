@@ -7,7 +7,7 @@ var todoContainer = document.getElementById("todocontainer")
 
 addButton.addEventListener('click', function(){
     // Check if the input field is empty
-
+    
     if (inputData.value == ""){
         inputData.style.border = "2px solid red"
     }
@@ -29,5 +29,7 @@ addButton.addEventListener('click', function(){
         paragraph.addEventListener('dblclick', function(){
             todoContainer.removeChild(paragraph)
         })
+
+        inputData.value = ""
     }
 })
