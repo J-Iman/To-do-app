@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.2rem;
+}
+body {
+    display: grid;
+    place-items: center;
+
+    background-color: #2E4053;
+}
+img {
+    width: 100px;
+    margin: 15px auto;
+}
+#title {
+    font-size: 1.3rem;
+    line-height: 0.2;
+    margin-bottom: 30px;
+}
+.conatiner {
+    background-color: #ecf2f4;
+    padding: 10px;
+    margin-top: 15%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#inputfield {
+    background-color: white;
+    outline: none;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#addbutton {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    background-color: #08ad81;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+}
+#addbutton:hover {
+    background-color: #04795a;
+    transition: 0.3s;
+}
+#addbutton:focus {
+    background-color: #04795a;
+    transition: 0.3s;
+}
+
+hr {
+    margin: 19px auto;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.applyonparagraph{
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    opacity: 80%;
+    text-align: left;
+}
+.wronginput {
+    border: 1px solid red;
+}
+
+@media(max-width: 559px){
+    * {
+        font-size: 1rem;
+    }
+}
