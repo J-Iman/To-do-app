@@ -69,7 +69,7 @@ hr {
     border: none;
     border-radius: 5px;
     background-color: gray;
-    opacity: 80%;
+    opacity: 79%;
     text-align: left;
 }
 .wronginput {
@@ -78,6 +78,6 @@ hr {
 
 @media(max-width: 559px){
     * {
-        font-size: 1rem;
+        font-size: 1.001rem;
     }
 }
