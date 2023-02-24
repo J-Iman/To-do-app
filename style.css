@@ -15,15 +15,11 @@ img {
     width: 100px;
     margin: 15px auto;
 }
-#title {
-    font-size: 1.3rem;
-    line-height: 0.2;
-    margin-bottom: 30px;
-}
+
 .conatiner {
     background-color: #ecf2f4;
     padding: 10px;
-    margin-top: 15%;
+    margin-top: 3%;
     text-align: center;
     border-radius: 10px;
 }
@@ -34,6 +30,8 @@ img {
     padding: 5px;
     border: 2px solid white;
     border-radius: 5px;
+
+    margin-bottom: 3%;
 }
 
 #addbutton {
@@ -41,19 +39,20 @@ img {
     border-radius: 5px;
     padding: 5px 15px;
     margin-left: 10px;
-    background-color: #08ad81;
-    color: white;
-    font-weight: bolder;
+    border: 1px solid #08ad81;
+    color: black;
     cursor: pointer;
     outline: none;
 }
 #addbutton:hover {
     background-color: #04795a;
     transition: 0.3s;
+    color: white;
 }
 #addbutton:focus {
     background-color: #04795a;
     transition: 0.3s;
+    color: white;
 }
 
 hr {
@@ -62,22 +61,87 @@ hr {
     border-bottom: 1px solid black;
 }
 
+
+/* Manullay added classes via JavaScript */
+
+.wronginput {
+    border: 1px solid red;
+}
+
+.inside-to-do-container-style {
+    display: flex;
+    justify-content: space-between;
+}
 .applyonparagraph{
     cursor: pointer;
     outline: none;
     padding: 5px;
     border: none;
     border-radius: 5px;
-    background-color: gray;
-    opacity: 79%;
+    background-color: white;
+    color: black;
+    opacity: 80%;
     text-align: left;
+    font-size: 1rem;
+    min-width: 250px;
+    padding: 10px ;
 }
-.wronginput {
+
+.remove-button-style, .cross-button-style{
+    margin-top: 23px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
     border: 1px solid red;
+    color: black;
+    outline: none;
+    margin-left: 3px;
+    font-size: 1rem;
+    cursor: pointer;
 }
+.cross-button-style {
+    border: 1px solid #0275d8;
+    margin-left: 10px;
+}
+.cross-button-style:hover {
+    background-color: #0275d8;
+    color: white;
+    transition: 0.3s;
+}
+.cross-button-style:focus {
+    background-color: #0275d8;
+    color: white;
+    transition: 0.3s;
+}
+.remove-button-style:hover{
+    color: white;
+    background-color: red;
+    transition: 0.3s;
+}
+
+.remove-button-style:focus{
+    color: white;
+    background-color: red;
+    transition: 0.3s;
+}
+
 
 @media(max-width: 559px){
     * {
-        font-size: 1.001rem;
+        font-size: 0.8rem;
+    }
+    .applyonparagraph{
+        padding: 1px;
+        min-width: 200px;
+        padding: 10px ;
+    }
+    .remove-button-style, .cross-button-style{
+        margin-top: 18px;
+    }
+    #inputfield {
+        font-size: 1.4rem;
+    }
+    #addbutton {
+        font-size: 1.4rem;
     }
 }
